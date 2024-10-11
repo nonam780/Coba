@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GA TAU</title>
+  <meta name="description" content="Semangat beraktifitas ya sayang">
+  <meta name="author" content="Wafa Rifqi Anafin">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/efekteks.css">
+  <link rel="stylesheet" href="css/responsif.css">
+  <link rel="stylesheet" href="css/buciners.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+
+</head>
+
+<body>
+  <!--Author    : Wafa Rifki Anafin-->
+  <!--Modify    : no3254-->
+  <div class="kontener2" id="kontener2">
+    <h1>Hai Nay</h1>
+    <button class="tombol" id="tombol">Mulai Sekarang</button>
+  </div>
+
+  <div class="kontener" id="kontener">
+    <div class="dalemnya_kontener">
+      <h1 class="judul_halaman">DARI ORANG BARU</h1>
+      <a class="tombol_menu" onclick="klikMenu()"></a>
+      <section class="halaman1 dalemnya_halaman" onclick="PindahKeHalaman(0)">
+        <h1 class="judul_halaman">PENGENALAN</h1>
+        <br>
+        <img src="gambar/gambar1.jpg" alt="Web Bucin Html, Css, Js" class="gambar">
+        <br>
+        <div class="ucapan1">
+          <p class="isiucapan1">Haii!! Salam kenal dari orang yang baru kenal lu dalam  2 bulan ini wkwk<br><br>
+            Gimana rasanya makin dewasa? Berat ya? wkwk <br><br>
+            Nikmatin aja ya prosesnya mau bagaimana pun hasilnya nanti yang penting udah usaha sebaik yang lu bisa.<br><br>
+            Roda berputar ko akan ada momen diatas dan dibawah, semua hanya tentang seberapa lu sabar jalaninnya, seberapa besar usaha lu, dan jangan lupa ibadahnya.<br>
+          </p>
+        </div>
+      </section>
+      <section class="halaman2 dalemnya_halaman" onclick="PindahKeHalaman(1)">
+        <h1 class="judul_halaman">INTI</h1>
+        <br>
+        <img src="gambar/gambar2.jpg" alt="Web Bucin Html, Css, Js" class="gambar">
+        <br>
+        <div class="ucapan2">
+          <p class="isiucapan2">Selamat sudah di tahap perkuliahan dimana semuanya akan jauh berbeda dari apa yang lu ketahui, mungkin sekarang belum. <br>
+            <br>Kuliah yang benar fokus, ingat apa aja yang ingin lu capai. <br><br>
+            Ga usah ngerasa sendiri kalau ada masalah atau hal yang bikin lu ga nyaman, masih ada teman-teman yang baik sama lu, termasuk ada gua yang akan dengar keluh kesah lu wkwk.
+          </p>
+        </div>
+      </section>
+      <section class="halaman3 dalemnya_halaman" onclick="PindahKeHalaman(2)">
+        <h1 class="judul_halaman">PENUTUP</h1>
+        <br>
+        <img src="gambar/gambar3.jpg" alt="Web Bucin Html, Css, Js" class="gambar">
+        <br>
+        <div class="ucapan3">
+          <p class="isiucapan3">Sepertinya udah terlalu banyak gua bicara, dan ga bosen gua ingatkan untuk hati-hati dalam bergaul apalagi kenal laki-laki yang lu belum tau baik buruknya.<br><br>
+            Ga usah aneh-aneh atau melakukan hal yang melewati batas, ingat kejadian yang udah pernah terjadi hal-hal yang bahkan di luar ekspetasi elu.<br><br>
+            Jangan terlena dengan waktu, waktu akan berlalu dengan sangat cepat tanpa lu sadari, manfaatkan waktu yang ada sebaik mungkin ya.<br>Kan tidak lucu kalau ada yang nanya 'Apa kabar? bukan kabar lu, tapi apa kabar cita-cita lu? apakah sudah lu wujudkan atau hanya menguap jadi angan-angan'<br><br>
+            Lihat foto diatas? hanya mengandung 2 pilihan, jangan aneh-aneh? oke? atau gua yang akan bertindak? termasuk terhadap orang-orang yang kelewatan sama lu wkwk
+          </p>
+        </div>
+      </section>
+      <section class="halaman4 dalemnya_halaman" onclick="PindahKeHalaman(3)">
+        <h1 class="judul_halaman">Nayla</h1>
+        <br>
+        <h1 id="waktu"></h1>
+        <script type="text/javascript">
+          document.write("<center>");
+          var hari = new Date();
+          var jam = hari.getHours();
+          if (jam >= 5 && jam <= 10) {
+            document.write(
+              "<h1 class='ucapan'>Selamat Pagi Nay!</h1><p class='isiucapan'>Selamat Pagi, Selamat Beraktifitas, Buang Rasa Malasnya, Jangan Lupa Sarapan<p>"
+            );
+          } else if (jam >= 11 && jam <= 14) {
+            document.write(
+              "<h1 class='ucapan'>Selamat Siang Nay!</h1><p class='isiucapan'>Jangan Lupa Makan Siang, Ingat Lambungnyaa!!!<p>"
+            );
+          } else if (jam >= 15 && jam <= 17) {
+            document.write(
+              "<h1 class='ucapan'>Selamat Siang Menjelang Sore Nay!</h1><p class='isiucapan'>Jangan Lupa Mandi, Ingat Sholatnya Juga Ya<p>"
+            );
+          } else {
+            document.write(
+              "<h1 class='ucapan'>Selamat Malam Nay!</h1><p class='isiucapan'>Gimana harinya? Lelah? Istirahat yang Cukup Ya, Jaga Kesehatan<p>"
+            );
+          }
+          document.write("</center>");
+        </script>
+      </section>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.0/jquery.min.js"
+    integrity="sha512-synHs+rLg2WDVE9U0oHVJURDCiqft60GcWOW7tXySy8oIr0Hjl3K9gv7Bq/gSj4NDVpc5vmsNkMGGJ6t2VpUMA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdn.rawgit.com/bungfrangki/efeksalju/2a7805c7/efek-salju.js" type="text/javascript"></script>
+  <script src="js/script.js"></script>
+  <script>
+    document.getElementById("waktu").innerHTML = formatAMPM();
+
+    function formatAMPM() {
+      var waktu = new Date(),
+        menit = waktu.getMinutes().toString().length == 1 ? '0' + waktu.getMinutes() : waktu.getMinutes(),
+        jam = waktu.getHours().toString().length == 1 ? '0' + waktu.getHours() : waktu.getHours(),
+        ampm = waktu.getHours() >= 12 ? 'PM' : 'AM',
+        bulan = ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober',
+          'November', 'Desember'
+        ],
+        hari = ['Minggu', 'Senin', 'Selasa', 'Rabu', 'Kamis', 'Jumat', 'Sabtu'];
+      return '<h1 class="ml1"><span class="text-wrapper"><span class="line line1"></span><span class="letters">' + hari[
+          waktu.getDay()] +
+        ', ' + waktu.getDate() + ' ' + bulan[waktu.getMonth()] +
+        ' ' + waktu.getFullYear() + '</span><span class="line line2"></span></span></h1><p class="ml2"> ' + jam + ':' +
+        menit + ' ' + ampm + ' </p>';
+
+    }
+  </script>
+  <script>
+    $(document).ready(function () {
+      var audio = new Audio('audio/audio2.mp3');
+      $("#tombol").click(function () {
+        $("#kontener2").fadeOut();
+        $("#kontener").fadeIn("4000");
+        audio.play();
+      });
+    });
+  </script>
+  <script>
+    var textWrapper = document.querySelector('.ml1 .letters');
+    textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+    anime.timeline({
+        loop: false
+      })
+      .add({
+        targets: '.ml1 .letter',
+        scale: [0.3, 1],
+        opacity: [0, 1],
+        translateZ: 0,
+        easing: "easeOutExpo",
+        duration: 600,
+        delay: (el, i) => 70 * (i + 1)
+      }).add({
+        targets: '.ml1 .line',
+        scaleX: [0, 1],
+        opacity: [0.5, 1],
+        easing: "easeOutExpo",
+        duration: 700,
+        offset: '-=875',
+        delay: (el, i, l) => 80 * (l - i)
+      }).add({
+        targets: '.ml1',
+        opacity: 1,
+        duration: 1000,
+        easing: "easeOutExpo",
+        delay: 1000
+      });
+  </script>
+  <script>
+    var textWrapper = document.querySelector('.ml2');
+    textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+    anime.timeline({
+        loop: false
+      })
+      .add({
+        targets: '.ml2 .letter',
+        scale: [4, 1],
+        opacity: [0, 1],
+        translateZ: 0,
+        easing: "easeOutExpo",
+        duration: 950,
+        delay: 1400
+      }).add({
+        targets: '.ml2',
+        opacity: 1,
+        duration: 1000,
+        easing: "easeOutExpo",
+        delay: 1000
+      });
+  </script>
+</body>
+
+</html>
